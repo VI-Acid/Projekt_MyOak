@@ -1,11 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            background-color: #9cd8aa;
+        }
+    </style>
+
 </head>
+
 <body>
-    
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/baustein2/register.html">
+                    Registrierung
+                </a>
+                <a href="/baustein1/hilfe.html">
+                    FAQ
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <form action="./register.html" method="GET">
+
+        <label for="formAnrede">Anrede*</label>
+        <select id="formAnrede" name="Anrede" required>
+            <option value="" disabled selected>Wählen Sie eine Anrede</option>
+            <option value="wien">Herr</option>
+            <option value="notwien">Frau</option>
+        </select>
+        </br>
+
+        <label for="formVorname">Vorname*</label>
+        <input name="Vorname" id="formVorname" type="text" required />
+        </br>
+
+        <label for="formNachname">Nachname*</label>
+        <input name="Nachname" id="formNachname" type="text" required />
+        </br>
+
+        <label for="email">Email Adresse*</label>
+        <input name="formEmail" id="email" type="email" placeholder="john@example.com" required />
+        <br />
+
+        <label for="formtele">Telefon*</label>
+        <input name="Telefon" id="formtele" type="tel" required />
+        </br>
+
+        <label for="formadresse">Adresse*</label>
+        <label for="formadressenr"></label>
+        <input name="Adresse" id="formadresse" type="text" placeholder="Straßenname" required />
+        <input name="Adressenr" id="formadressenr" type="text" placeholder="Nr" required />
+        </br>
+
+        <label for="formPlz">PLZ und Ort*</label>
+        <label for="formOrt"></label>
+        <input name="PLZ" id="formPlz" type="text" placeholder="PLZ" required />
+        <input name="Ort" id="formOrt" type="text" placeholder="Ort" required />
+        </br>
+
+        <label for="formLand">Land*</label>
+        <input name="Land" id="formLand" type="text" placeholder="Österreich" />
+        </br>
+
+        <label for="formUsername">Username*</label>
+        <input name="Username" id="formUsername" type="text" required />
+        </br>
+        <!-- Bei nächstem Baustein User und User-Login abtrennen-->
+
+        <label for="passwort1">Passwort*</label>
+        <input name="Passwort1" type="password" id="passwort1" minlength="6" maxlength="20" required />
+        </br>
+        <label for="passwort2">Passwort wiederholen*</label>
+        <input name="Passwort2" type="password" id="passwort2" minlength="6" maxlength="20" required />
+        </br>
+        <!--Wiederholte Passworteingabe nur bei Registrierung prüfen für die Zukunnft-->
+
+        <input type="submit" />
+    </form>
+    <footer>
+        <!--Obere Sektion-->
+        <h2>My Oak</h2>
+        <p>Waldweg 42</p>
+        <p>3423 Hinterwald [NÖ] - Österreich</p>
+        <a href="tel:+436641234567">+43 664 123 4567</a>
+        <span>–</span> <!--span gruppiert Text/Elemente = generisches Inline Element-->
+        <a href="mailto:info@myoak-hotel.at">info@myoak-hotel.at</a>
+        <br>
+        <br>
+        <span>Top Wellnesshotel Niederösterreich</span>&nbsp;–&nbsp;<span>5 Sterne Hotel
+            Niederösterreich</span>&nbsp;–&nbsp;<span>Adults only Hotel Südtirol</span>
+        <br>
+        <br>
+        <span>Anreise</span> – <span>Pressebereich</span> – <span>Career</span>
+        <br>
+        <br>
+        <!--Untere Sektion-->
+        <a href="impressum.html">
+            Impressum
+        </a>
+    </footer>
 </body>
+
 </html>
