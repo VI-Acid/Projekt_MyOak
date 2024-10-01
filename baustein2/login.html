@@ -1,19 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Baumhotel My Oak - Hinterwald NÖ</title>
-    <style>
-        body {
-            background-color: #9cd8aa;
-        }
-    </style>
+    <link rel="stylesheet" href="../baustein3/stylesheet1.css">
 </head>
 
 <body>
-    <img src="../baustein1/english-oak-tree.jpg" alt="Oak Tree" width="400"/>
-        <div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand"> Welcome to Hotel MyOak ! </a>
+
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      
+                        <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="../baustein2/register.html">Registrierung</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link " href="../baustein1/hilfe.html">FAQ</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link " href="../baustein2/login.html">Login</a>
+                      </li>
+
+                     
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+
+<img src="../baustein1/english-oak-tree.jpg" alt="Oak Tree" width="400"/>
+<div>
+
+<!--
     <nav>
         <ul>
             <li>
@@ -34,7 +63,7 @@
         </ul>
     </nav>
     <p>___________________________________________________________</p>
-
+-->
 
     <form action="./login.html" method="GET"></form>
 
@@ -52,29 +81,52 @@
 
 
     </form>
-    <footer>
-        <p>___________________________________________________________</p>
-
-        <!--Obere Sektion-->
-        <h2>My Oak</h2>
-        <p>Waldweg 42</p>
-        <p>3423 Hinterwald [NÖ] - Österreich</p>
-        <a href="tel:+436641234567">+43 664 123 4567</a>
-        <span>–</span> <!--span gruppiert Text/Elemente = generisches Inline Element-->
-        <a href="mailto:info@myoak-hotel.at">info@myoak-hotel.at</a>
-        <br>
-        <br>
-        <span>Top Wellnesshotel Niederösterreich</span>&nbsp;–&nbsp;<span>5 Sterne Hotel
-            Niederösterreich</span>&nbsp;–&nbsp;<span>Adults only Hotel Südtirol</span>
-        <br>
-        <br>
-        <span>Anreise</span> – <span>Pressebereich</span> – <span>Career</span>
-        <br>
-        <br>
-        <!--Untere Sektion-->
-        <a href="../baustein1/impressum.html">
-            Impressum
-        </a>
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <!-- Upper Section -->
+            <div class="row text-center mb-4">
+                <div class="col-md-12">
+                    <h2>My Oak</h2>
+                    <br>
+                    <p>Waldweg 42, 3423 Hinterwald [NÖ] - Österreich</p>
+                    <p><a class="text-light" href="tel:+436641234567">+43 664 123 4567</a> | <a class="text-light" href="mailto:info@myoak-hotel.at">info@myoak-hotel.at</a></p>
+                </div>
+            </div>
+    
+            <!-- Middle Section: Highlights -->
+            <div class="row text-center mb-4">
+                <div class="col-md-4">
+                    <p>Top Wellnesshotel Niederösterreich</p>
+                </div>
+                <div class="col-md-4">
+                    <p>5 Sterne Hotel Niederösterreich</p>
+                </div>
+                <div class="col-md-4">
+                    <p>Adults only Hotel Südtirol</p>
+                </div>
+            </div>
+    
+            <!-- Lower Section: Links -->
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <p><a class="text-light" href="#">Anreise</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><a class="text-light" href="#">Pressebereich</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><a class="text-light" href="#">Career</a></p>
+                </div>
+            </div>
+    
+            <!-- Bottom Section: Legal -->
+            <div class="row text-center mt-4">
+                <div class="col-md-12">
+                    <hr class="text-light">
+                    <p><a class="text-light" href="../baustein1/impressum.html">Impressum</a></p>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
