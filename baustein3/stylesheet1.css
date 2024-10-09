@@ -49,7 +49,7 @@ main {
 
   .wrapper {
     text-align: center;
-    width: 420px;
+    width: fit-content;
     background: linear-gradient(to right, rgb(70, 119, 97), rgb(125, 149, 142), rgb(41, 94, 79));
     border: 2px solid rgba(255, 255, 255, 2);
     color: #fff;
@@ -90,7 +90,7 @@ main {
     position: sticky;
     right: 10px;
     top: 20%;
-    transform: translateY(-170%) translateX(700%);
+    transform: translateY(-170%) translateX(600%);
     font-size: 20px;
   }
 
