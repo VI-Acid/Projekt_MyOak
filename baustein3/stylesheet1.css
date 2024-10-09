@@ -86,11 +86,11 @@ main {
     color: #fff;
   }
 
-  .main .eingabefeld i {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+  .eingabefeld i {
+    position: sticky;
+    right: 10px;
+    top: 20%;
+    transform: translateY(-170%) translateX(700%);
     font-size: 20px;
   }
 
