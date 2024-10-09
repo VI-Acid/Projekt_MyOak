@@ -18,7 +18,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url('/baustein3/english-oak-tree.jpg') no-repeat;
+  background: url('/baustein3/oaktree-bw.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -50,8 +50,7 @@ main {
   .wrapper {
     text-align: center;
     width: 420px;
-   /*  background: rgb(116, 160, 135); */
-    background: linear-gradient(to right, rgb(70, 119, 97), rgb(91, 98, 96), rgb(64, 152, 127));
+    background: linear-gradient(to right, rgb(70, 119, 97), rgb(125, 149, 142), rgb(41, 94, 79));
     border: 2px solid rgba(255, 255, 255, 2);
     color: #fff;
     border-radius: 10px;
