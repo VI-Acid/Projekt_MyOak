@@ -1,0 +1,4 @@
+.custom-image {
+    width: 300px;  /* Feste Breite */
+    height: auto;  /* Höhe passt sich automatisch an */
+}
