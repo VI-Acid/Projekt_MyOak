@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+  main {
+    min-height: calc(100vh - 160px);
+    /* 100% Viewport-Höhe minus Höhe von Header und Footer*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+p {
+    text-align: center;
+    margin: 5px;
+}
+
+.wrapper {
+    background: rgb(125, 149, 142);
+    border: 2px solid rgba(255, 255, 255, 2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.accordion-button:focus, 
+.accordion-button:not(.collapsed) {
+    color: #fff; /* Textfarbe */
+    background-color: rgb(70, 119, 97); /* Grüner Hintergrund */
+    border-color: rgb(70, 119, 97); /* Grüne Umrandung */   
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(41, 94, 79); /* Grüner Fokusrahmen */
+    outline: none; /* Entfernt den Standard-Fokusrahmen */
+}
+
+.emaillink a,
+.tellink a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.emaillink a:hover,
+.tellink a:hover {
+    text-decoration: underline;
+}
+
+
+/* Begrenze die maximale Höhe des gesamten Karussells */
+.carousel-inner {
+    max-height: 600px; /* Wähle hier die gewünschte Höhe aus */
+    overflow: hidden;  /* Verhindert, dass Bilder über die Höhe hinausgehen */
+  }
+  
+  /* Passe die Höhe der Bilder an und skaliere sie entsprechend */
+  .carousel-item img {
+    height: 600px;      /* Füllt die Höhe des Karussells aus */
+    width: 100%;       /* Deckt die gesamte Breite ab */
+    object-fit: cover;  
+  }
+  
+

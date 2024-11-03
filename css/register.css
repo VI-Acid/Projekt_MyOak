@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    align-items: center;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+    /* 100% Viewport-Höhe minus Höhe von Header und Footer */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/oaktree-bw.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.wrapper {
+    background: linear-gradient(to right, rgb(70, 119, 97), rgb(125, 149, 142), rgb(41, 94, 79));
+    border: 2px solid rgba(255, 255, 255, 2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.wrapper .eingabefeld {
+    text-align: left;
+    width: 100%;
+    margin: 10px;
+    /* Abstand zwischen den Eingabefeldern */
+}
+
+.eingabefeld input,
+.eingabefeld select {
+    width: 40%;
+    background: rgb(41, 94, 79);
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 40px;
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+}
+
+.eingabefeld select option {
+    color: #FFF;
+}
+
+
+.eingabefeld label {
+    text-align: left;
+    display: block;
+    background: transparent;
+    color: #fff;
+    margin: 10px;
+    /* Abstand zwischen Label und Eingabefeld */
+}
+
+.eingabefeld input::placeholder {
+    color: #fff;
+}
+
+.wrapper .btn {
+    width: 50%;
+    height: 65px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wrapper {
+        max-width: 800px;
+        /* Maximale Breite für große Bildschirme */
+        width: 90%;
+        /* Breite für kleinere Bildschirme */
+    }
+
+    .wrapper h1 {
+        font-size: 3rem;
+        /* Größere Schrift für größere Bildschirme */
+    }
+
+    .eingabefeld input,
+    .eingabefeld select {
+        width: 100%;
+        /* Vollständige Breite nutzen */
+        max-width: 300px;
+        /* Maximalbreite für große Bildschirme */
+    }
+
+}

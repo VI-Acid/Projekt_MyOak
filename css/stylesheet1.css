@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  min-height: calc(100vh - 160px);
+  /* 100% Viewport-Höhe minus Höhe von Header und Footer */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 100vh;
+  
+}
+
+
+/* Begrenze die maximale Höhe des gesamten Karussells */
+.carousel-inner {
+  max-height: 800px; /* Wähle hier die gewünschte Höhe aus */
+  overflow: hidden;  /* Verhindert, dass Bilder über die Höhe hinausgehen */
+}
+
+/* Passe die Höhe der Bilder an und skaliere sie entsprechend */
+.carousel-item img {
+  height: 800px;      /* Füllt die Höhe des Karussells aus */
+  width: 100%;       /* Deckt die gesamte Breite ab */
+  object-fit: cover;  
+}
+
